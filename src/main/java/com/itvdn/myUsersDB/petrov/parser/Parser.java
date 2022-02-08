@@ -2,6 +2,7 @@ package com.itvdn.myUsersDB.petrov.parser;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.itvdn.myUsersDB.petrov.config.Config;
+import com.itvdn.myUsersDB.petrov.config.Config_;
 
 import java.io.File;
 import java.io.IOException;
@@ -39,5 +40,10 @@ public class Parser {
                 percentAnswer,
                 percentCorrectTotal);
         return Config.getInstance();
+    }
+
+    public static Config_ parseConfig_(String configPath) throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        return objectMapper.readValue(new File(configPath), Config_.class);
     }
 }

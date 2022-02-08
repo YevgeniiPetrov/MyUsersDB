@@ -1,17 +1,9 @@
 {
-  "user": {
-    "percentCorrectData": {
-      "login": 25,
-      "password": 25,
-      "userData": {
-        "birthday": 15,
-        "email": 15
-      },
-      "secret": {
-        "question": 20,
-        "answer": 20
-      },
-      "percentCorrectTotal": 60
-    }
-  }
+  "percentCorrectUserLogin": 25,
+  "percentCorrectUserPassword": 25,
+  "percentCorrectUserBirthday": 15,
+  "percentCorrectUserEmail": 15,
+  "percentCorrectUserSecretQuestion": 20,
+  "percentCorrectUserSecretAnswer": 20,
+  "percentCorrectUserDataTotal": 60
 }
