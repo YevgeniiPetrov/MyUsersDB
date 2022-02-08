@@ -1,13 +1,14 @@
-import com.itvdn.myUsersDB.petrov.config.Config_;
+import com.itvdn.myUsersDB.petrov.config.Config;
+import com.itvdn.myUsersDB.petrov.encryption.Encryption;
+import com.itvdn.myUsersDB.petrov.parser.Parser;
+import com.itvdn.myUsersDB.petrov.user.User;
 
 import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-        try {
-            System.out.println(Config_.getInstance().USER_PERCENT_CORRECT_TOTAL);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        //System.out.println(new User("Ivan", "Ivanov", null, "ivan.ivanov@gmail.com", "ivanov.i", "test"));
+        //System.out.println(Encryption.decrypt(null));
+        System.out.println(Parser.parseUser("../MyUsersDB/src/main/java/com/itvdn/myUsersDB/petrov/storage/user.json"));
     }
 }

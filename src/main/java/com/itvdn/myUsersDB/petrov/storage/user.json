@@ -1,0 +1,16 @@
+{
+  "userData": {
+    "firstName": "ivan",
+    "lastName": "ivanov",
+    "birthday": "23.09.1990",
+    "email": "ivan.ivanov@gmail.com"
+  },
+  "authentication": {
+    "login": "ivanov.i",
+    "password": "O/4XaHYG0bWFEicKhbsjGQ=="
+  },
+  "secret": {
+    "question": "favorite sport",
+    "answer": "soccer"
+  }
+}
