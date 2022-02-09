@@ -1,4 +1,4 @@
-package com.itvdn.myUsersDB.petrov.secret;
+package com.itvdn.myUsersDB.petrov.user;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
@@ -6,21 +6,12 @@ import com.itvdn.myUsersDB.petrov.config.Config;
 
 import java.util.Objects;
 
-@JsonRootName(value = "secret")
+@JsonRootName("secret")
 public class Secret {
     @JsonProperty
     private String question;
     @JsonProperty
     private String answer;
-
-    private Secret() {
-
-    }
-
-    public Secret(String question, String answer) {
-        this.question = question;
-        this.answer = answer;
-    }
 
     public boolean checkQuestion(String question) {
         return Objects.equals(question, this.question);

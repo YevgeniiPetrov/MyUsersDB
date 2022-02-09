@@ -1,27 +1,18 @@
-package com.itvdn.myUsersDB.petrov.authentication;
+package com.itvdn.myUsersDB.petrov.user;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 import com.itvdn.myUsersDB.petrov.config.Config;
-import com.itvdn.myUsersDB.petrov.encryption.Encryption;
+import com.itvdn.myUsersDB.petrov.utils.Encryption;
 
 import java.util.Objects;
 
-@JsonRootName(value = "authentication")
+@JsonRootName("authentication")
 public class Authentication {
     @JsonProperty
     private String login;
     @JsonProperty
     private String password;
-
-    private Authentication() {
-
-    }
-
-    public Authentication(String login, String password) {
-        this.login = login;
-        this.password = Encryption.encrypt(password);
-    }
 
     public boolean checkLogin(String login) {
         return Objects.equals(login, this.login);

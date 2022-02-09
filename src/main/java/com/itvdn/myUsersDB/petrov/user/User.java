@@ -2,13 +2,11 @@ package com.itvdn.myUsersDB.petrov.user;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import com.itvdn.myUsersDB.petrov.authentication.Authentication;
 import com.itvdn.myUsersDB.petrov.config.Config;
-import com.itvdn.myUsersDB.petrov.secret.Secret;
 
-import java.time.LocalDate;
 import java.util.Date;
 
+@JsonRootName("user")
 public class User {
     @JsonProperty
     private UserData userData;
@@ -17,21 +15,11 @@ public class User {
     @JsonProperty
     private Secret secret;
 
-    private User() {
-
-    }
+    private User() {}
 
     private User(UserData userData, Authentication authentication) {
         this.userData = userData;
         this.authentication = authentication;
-    }
-
-    public User(String firstName, String lastName, Date birthday, String email, String login, String password) {
-        this(new UserData(firstName, lastName, birthday, email), new Authentication(login, password));
-    }
-
-    public Secret getSecret() {
-        return secret;
     }
 
     public void setSecret(Secret secret) {

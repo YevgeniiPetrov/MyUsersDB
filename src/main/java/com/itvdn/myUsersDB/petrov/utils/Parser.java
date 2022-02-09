@@ -1,6 +1,7 @@
-package com.itvdn.myUsersDB.petrov.parser;
+package com.itvdn.myUsersDB.petrov.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.itvdn.myUsersDB.petrov.form.UserForm;
 import com.itvdn.myUsersDB.petrov.user.User;
 
 import java.io.File;
@@ -16,5 +17,16 @@ public class Parser {
             e.printStackTrace();
         }
         return user;
+    }
+
+    public static UserForm parseUserForm(String filePath) {
+        ObjectMapper objectMapper = new ObjectMapper();
+        UserForm userForm = null;
+        try {
+            userForm = objectMapper.readValue(new File(filePath), UserForm.class);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return userForm;
     }
 }

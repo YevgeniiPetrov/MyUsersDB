@@ -1,36 +1,23 @@
 package com.itvdn.myUsersDB.petrov.user;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 import com.itvdn.myUsersDB.petrov.config.Config;
 
-import java.time.LocalDate;
 import java.util.Date;
 import java.util.Objects;
 
-@JsonRootName(value = "userData")
+@JsonRootName("userData")
 public class UserData {
     @JsonProperty
     private String firstName;
     @JsonProperty
     private String lastName;
-    @JsonFormat(pattern="dd.MM.yyyy")
+    @JsonFormat(pattern = "dd.MM.yyyy")
     private Date birthday;
     @JsonProperty
     private String email;
-
-    private UserData() {
-
-    }
-
-    public UserData(String firstName, String lastName, Date birthday, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.birthday = birthday;
-        this.email = email;
-    }
 
     private boolean checkBirthday(Date birthday) {
         return Objects.equals(birthday, this.birthday);

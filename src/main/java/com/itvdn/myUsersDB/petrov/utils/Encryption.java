@@ -1,4 +1,4 @@
-package com.itvdn.myUsersDB.petrov.encryption;
+package com.itvdn.myUsersDB.petrov.utils;
 
 import org.jasypt.util.text.BasicTextEncryptor;
 
