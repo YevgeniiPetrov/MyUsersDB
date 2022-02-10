@@ -1,6 +1,7 @@
 package com.itvdn.myUsersDB.petrov.user.form;
 
 import com.itvdn.myUsersDB.petrov.application.Config;
+import com.itvdn.myUsersDB.petrov.user.User;
 import com.itvdn.myUsersDB.petrov.utils.Encryption;
 
 import java.util.Date;
@@ -53,5 +54,9 @@ public class CheckUserForm {
                 checkEmail(userForm.getEmail()) &&
                 checkSecret(userForm.getSecretQuestion()) &&
                 checkSecret(userForm.getSecretAnswer());
+    }
+
+    public static boolean changePasswordCheck(UserForm userForm, User userFromDB) {
+        return checkPassword(userForm.getPassword());
     }
 }

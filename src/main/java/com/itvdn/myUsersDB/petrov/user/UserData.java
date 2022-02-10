@@ -19,23 +19,27 @@ public class UserData {
     @JsonProperty
     private String email;
 
+    private boolean checkFirstName(String firstName) {
+        return Objects.equals(firstName, this.firstName);
+    }
+
+    private boolean checkLastName(String lastName) {
+        return Objects.equals(lastName, this.lastName);
+    }
+
     private boolean checkBirthday(Date birthday) {
-        if (Config.getInstance().REQUIRED_USER_BIRTHDAY && birthday == null) {
-            return false;
-        }
         return Objects.equals(birthday, this.birthday);
     }
 
     private boolean checkEmail(String email) {
-        if (Config.getInstance().REQUIRED_USER_EMAIL && email == null) {
-            return false;
-        }
         return Objects.equals(email, this.email);
     }
 
-    public int getPercentCorrectData(Date birthday, String email) {
+    public int getPercentCorrectData(String firstName, String lastName, Date birthday, String email) {
         Config config = Config.getInstance();
-        return (checkBirthday(birthday) ? config.PERCENT_CORRECT_USER_BIRTHDAY : config.ZERO) +
+        return (checkFirstName(firstName) ? config.PERCENT_CORRECT_USER_FIRST_NAME : config.ZERO) +
+                (checkFirstName(lastName) ? config.PERCENT_CORRECT_USER_LAST_NAME : config.ZERO) +
+                (checkBirthday(birthday) ? config.PERCENT_CORRECT_USER_BIRTHDAY : config.ZERO) +
                 (checkEmail(email) ? config.PERCENT_CORRECT_USER_EMAIL : config.ZERO);
     }
 

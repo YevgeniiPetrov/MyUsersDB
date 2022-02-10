@@ -14,16 +14,10 @@ public class Secret {
     private String answer;
 
     public boolean checkQuestion(String question) {
-        if (Config.getInstance().REQUIRED_USER_SECRET && question == null) {
-            return false;
-        }
         return Objects.equals(question, this.question);
     }
 
     public boolean checkAnswer(String answer) {
-        if (Config.getInstance().REQUIRED_USER_SECRET && answer == null) {
-            return false;
-        }
         return Objects.equals(answer, this.answer);
     }
 

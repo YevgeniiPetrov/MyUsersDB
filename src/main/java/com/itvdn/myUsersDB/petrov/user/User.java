@@ -26,18 +26,8 @@ public class User {
         return authentication;
     }
 
-    public void setSecret(Secret secret) {
-        this.secret = secret;
-    }
-
-    public boolean registrationCheck(String login, String password, Date birthday, String email, String question, String answer) {
-        return authentication.checkLogin(login) &&
-                authentication.checkPassword(password) &&
-                recoveryCheck(login, password, birthday, email, question, answer);
-    }
-
-    public boolean recoveryCheck(String login, String password, Date birthday, String email, String question, String answer) {
-        return (userData.getPercentCorrectData(birthday, email) +
+    public boolean recoveryCheck(String firstName, String lastName, Date birthday, String email, String login, String password, String question, String answer) {
+        return (userData.getPercentCorrectData(firstName, lastName, birthday, email) +
                 authentication.getPercentCorrectData(login, password) +
                 secret.getPercentCorrectData(question, answer)) >= Config.getInstance().PERCENT_CORRECT_USER_DATA_TOTAL;
     }

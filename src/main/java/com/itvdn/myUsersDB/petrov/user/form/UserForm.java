@@ -7,7 +7,6 @@ import java.util.Date;
 
 public class UserForm {
     @JsonProperty
-    @JsonFormat(with = JsonFormat.Feature.ACCEPT_CASE_INSENSITIVE_PROPERTIES)
     private Action action;
     @JsonProperty
     private String firstName;

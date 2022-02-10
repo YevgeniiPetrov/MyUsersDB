@@ -19,6 +19,8 @@ public class Config {
     public final boolean REQUIRED_USER_BIRTHDAY;
     public final boolean REQUIRED_USER_EMAIL;
     public final boolean REQUIRED_USER_SECRET;
+    public final int PERCENT_CORRECT_USER_FIRST_NAME;
+    public final int PERCENT_CORRECT_USER_LAST_NAME;
     public final int PERCENT_CORRECT_USER_LOGIN;
     public final int PERCENT_CORRECT_USER_PASSWORD;
     public final int PERCENT_CORRECT_USER_BIRTHDAY;
@@ -41,6 +43,8 @@ public class Config {
             @JsonProperty("requiredUserBirthday") boolean requiredUserBirthday,
             @JsonProperty("requiredUserEmail") boolean requiredUserEmail,
             @JsonProperty("requiredUserSecret") boolean requiredUserSecret,
+            @JsonProperty("percentCorrectUserFirstName") int percentCorrectUserFirstName,
+            @JsonProperty("percentCorrectUserLastName") int percentCorrectUserLastName,
             @JsonProperty("percentCorrectUserLogin") int percentCorrectUserLogin,
             @JsonProperty("percentCorrectUserPassword") int percentCorrectUserPassword,
             @JsonProperty("percentCorrectUserBirthday") int percentCorrectUserBirthday,
@@ -59,6 +63,8 @@ public class Config {
         REQUIRED_USER_EMAIL = requiredUserEmail;
         REQUIRED_USER_LAST_NAME = requiredUserLastName;
         REQUIRED_USER_SECRET = requiredUserSecret;
+        PERCENT_CORRECT_USER_FIRST_NAME = percentCorrectUserFirstName;
+        PERCENT_CORRECT_USER_LAST_NAME = percentCorrectUserLastName;
         PERCENT_CORRECT_USER_LOGIN = percentCorrectUserLogin;
         PERCENT_CORRECT_USER_PASSWORD = percentCorrectUserPassword;
         PERCENT_CORRECT_USER_BIRTHDAY = percentCorrectUserBirthday;

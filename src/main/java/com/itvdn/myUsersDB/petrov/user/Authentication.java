@@ -15,20 +15,11 @@ public class Authentication {
     private String password;
 
     public boolean checkLogin(String login) {
-        Config config = Config.getInstance();
-        return login != null &&
-                login.length() >= config.MIN_LENGTH_USER_LOGIN &&
-                login.length() <= config.MAX_LENGTH_USER_LOGIN &&
-                Objects.equals(login, this.login);
+        return Objects.equals(login, this.login);
     }
 
     public boolean checkPassword(String password) {
-        Config config = Config.getInstance();
-        String decryptedPassword = Encryption.decrypt(password);
-        return decryptedPassword != null &&
-                decryptedPassword.length() >= config.MIN_LENGTH_USER_PASSWORD &&
-                decryptedPassword.length() <= config.MAX_LENGTH_USER_PASSWORD &&
-                Objects.equals(decryptedPassword, Encryption.decrypt(this.password));
+        return Objects.equals(Encryption.decrypt(password), Encryption.decrypt(this.password));
     }
 
     public String getLogin() {
