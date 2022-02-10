@@ -1,9 +1,0 @@
-{
-  "percentCorrectUserLogin": 25,
-  "percentCorrectUserPassword": 25,
-  "percentCorrectUserBirthday": 15,
-  "percentCorrectUserEmail": 15,
-  "percentCorrectUserSecretQuestion": 20,
-  "percentCorrectUserSecretAnswer": 20,
-  "percentCorrectUserDataTotal": 70
-}

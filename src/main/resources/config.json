@@ -1,0 +1,18 @@
+{
+  "minLengthUserLogin": 8,
+  "maxLengthUserLogin": 16,
+  "minLengthUserPassword": 8,
+  "maxLengthUserPassword": 16,
+  "requiredUserBirthday": false,
+  "requiredUserEmail": true,
+  "requiredUserSecret": false,
+  "percentCorrectUserLogin": 25,
+  "percentCorrectUserPassword": 25,
+  "percentCorrectUserBirthday": 15,
+  "percentCorrectUserEmail": 15,
+  "percentCorrectUserSecretQuestion": 20,
+  "percentCorrectUserSecretAnswer": 20,
+  "percentCorrectUserDataTotal": 70,
+  "DBPath": "../MyUsersDB/src/main/resources/users.json",
+  "userForms": "../MyUsersDB/src/main/resources/userForms.json"
+}

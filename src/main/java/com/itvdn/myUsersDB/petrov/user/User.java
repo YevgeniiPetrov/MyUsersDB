@@ -2,7 +2,7 @@ package com.itvdn.myUsersDB.petrov.user;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import com.itvdn.myUsersDB.petrov.config.Config;
+import com.itvdn.myUsersDB.petrov.application.Config;
 
 import java.util.Date;
 
@@ -22,12 +22,18 @@ public class User {
         this.authentication = authentication;
     }
 
+    public Authentication getAuthentication() {
+        return authentication;
+    }
+
     public void setSecret(Secret secret) {
         this.secret = secret;
     }
 
     public boolean registrationCheck(String login, String password, Date birthday, String email, String question, String answer) {
-        return login != null && password != null && recoveryCheck(login, password, birthday, email, question, answer);
+        return authentication.checkLogin(login) &&
+                authentication.checkPassword(password) &&
+                recoveryCheck(login, password, birthday, email, question, answer);
     }
 
     public boolean recoveryCheck(String login, String password, Date birthday, String email, String question, String answer) {

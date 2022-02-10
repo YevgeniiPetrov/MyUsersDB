@@ -2,7 +2,7 @@ package com.itvdn.myUsersDB.petrov.user;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import com.itvdn.myUsersDB.petrov.config.Config;
+import com.itvdn.myUsersDB.petrov.application.Config;
 import com.itvdn.myUsersDB.petrov.utils.Encryption;
 
 import java.util.Objects;
@@ -15,11 +15,24 @@ public class Authentication {
     private String password;
 
     public boolean checkLogin(String login) {
-        return Objects.equals(login, this.login);
+        Config config = Config.getInstance();
+        return login != null &&
+                login.length() >= config.MIN_LENGTH_USER_LOGIN &&
+                login.length() <= config.MAX_LENGTH_USER_LOGIN &&
+                Objects.equals(login, this.login);
     }
 
     public boolean checkPassword(String password) {
-        return Objects.equals(Encryption.decrypt(password), Encryption.decrypt(this.password));
+        Config config = Config.getInstance();
+        String decryptedPassword = Encryption.decrypt(password);
+        return decryptedPassword != null &&
+                decryptedPassword.length() >= config.MIN_LENGTH_USER_PASSWORD &&
+                decryptedPassword.length() <= config.MAX_LENGTH_USER_PASSWORD &&
+                Objects.equals(decryptedPassword, Encryption.decrypt(this.password));
+    }
+
+    public String getLogin() {
+        return login;
     }
 
     public int getPercentCorrectData(String login, String password) {

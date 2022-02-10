@@ -3,7 +3,7 @@ package com.itvdn.myUsersDB.petrov.user;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import com.itvdn.myUsersDB.petrov.config.Config;
+import com.itvdn.myUsersDB.petrov.application.Config;
 
 import java.util.Date;
 import java.util.Objects;
@@ -20,10 +20,16 @@ public class UserData {
     private String email;
 
     private boolean checkBirthday(Date birthday) {
+        if (Config.getInstance().REQUIRED_USER_BIRTHDAY && birthday == null) {
+            return false;
+        }
         return Objects.equals(birthday, this.birthday);
     }
 
     private boolean checkEmail(String email) {
+        if (Config.getInstance().REQUIRED_USER_EMAIL && email == null) {
+            return false;
+        }
         return Objects.equals(email, this.email);
     }
 

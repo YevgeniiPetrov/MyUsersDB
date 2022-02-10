@@ -1,0 +1,40 @@
+[
+  {
+    "action": "registration",
+    "user": {
+      "userData": {
+        "firstName": "ivan",
+        "lastName": "ivanov",
+        "birthday": "23.09.1990",
+        "email": "ivan.ivanov@gmail.com"
+      },
+      "authentication": {
+        "login": "ivanov.i",
+        "password": "qwerty12345"
+      },
+      "secret": {
+        "question": "favorite sport",
+        "answer": "soccer"
+      }
+    }
+  },
+  {
+    "action": "registration",
+    "user": {
+      "userData": {
+        "firstName": "vasia",
+        "lastName": "sidorov",
+        "birthday": "03.12.1995",
+        "email": "vasia.sidorov@gmail.com"
+      },
+      "authentication": {
+        "login": "sidorov.v",
+        "password": "asdfg67890"
+      },
+      "secret": {
+        "question": "favorite drink",
+        "answer": "beer"
+      }
+    }
+  }
+]

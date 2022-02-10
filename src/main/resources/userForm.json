@@ -1,5 +1,5 @@
 {
-  "action": "CHANGE_PASSWORD",
+  "action": "registration",
   "user": {
     "userData": {
       "firstName": "ivan",

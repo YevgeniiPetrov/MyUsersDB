@@ -1,0 +1,34 @@
+{
+  "test" : {
+    "userData" : {
+      "firstName" : "ivan",
+      "lastName" : "ivanov",
+      "birthday" : "23.09.1990",
+      "email" : "ivan.ivanov@gmail.com"
+    },
+    "authentication" : {
+      "login" : "ivanov.i",
+      "password" : null
+    },
+    "secret" : {
+      "question" : "favorite sport",
+      "answer" : "soccer"
+    }
+  },
+  "ivanov.i" : {
+    "userData" : {
+      "firstName" : "ivan",
+      "lastName" : "ivanov",
+      "birthday" : "23.09.1990",
+      "email" : "ivan.ivanov@gmail.com"
+    },
+    "authentication" : {
+      "login" : "ivanov.i",
+      "password" : null
+    },
+    "secret" : {
+      "question" : "favorite sport",
+      "answer" : "soccer"
+    }
+  }
+}
