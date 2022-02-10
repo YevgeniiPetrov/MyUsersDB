@@ -14,6 +14,8 @@ public class Config {
     public final int MAX_LENGTH_USER_LOGIN;
     public final int MIN_LENGTH_USER_PASSWORD;
     public final int MAX_LENGTH_USER_PASSWORD;
+    public final boolean REQUIRED_USER_FIRST_NAME;
+    public final boolean REQUIRED_USER_LAST_NAME;
     public final boolean REQUIRED_USER_BIRTHDAY;
     public final boolean REQUIRED_USER_EMAIL;
     public final boolean REQUIRED_USER_SECRET;
@@ -34,6 +36,8 @@ public class Config {
             @JsonProperty("maxLengthUserLogin") int maxLengthUserLogin,
             @JsonProperty("minLengthUserPassword") int minLengthUserPassword,
             @JsonProperty("maxLengthUserPassword") int maxLengthUserPassword,
+            @JsonProperty("requiredUserFirstName") boolean requiredUserFirstName,
+            @JsonProperty("requiredUserLastName") boolean requiredUserLastName,
             @JsonProperty("requiredUserBirthday") boolean requiredUserBirthday,
             @JsonProperty("requiredUserEmail") boolean requiredUserEmail,
             @JsonProperty("requiredUserSecret") boolean requiredUserSecret,
@@ -50,8 +54,10 @@ public class Config {
         MAX_LENGTH_USER_LOGIN = maxLengthUserLogin;
         MIN_LENGTH_USER_PASSWORD = minLengthUserPassword;
         MAX_LENGTH_USER_PASSWORD = maxLengthUserPassword;
+        REQUIRED_USER_FIRST_NAME = requiredUserFirstName;
         REQUIRED_USER_BIRTHDAY = requiredUserBirthday;
         REQUIRED_USER_EMAIL = requiredUserEmail;
+        REQUIRED_USER_LAST_NAME = requiredUserLastName;
         REQUIRED_USER_SECRET = requiredUserSecret;
         PERCENT_CORRECT_USER_LOGIN = percentCorrectUserLogin;
         PERCENT_CORRECT_USER_PASSWORD = percentCorrectUserPassword;

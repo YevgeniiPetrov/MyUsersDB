@@ -3,6 +3,8 @@
   "maxLengthUserLogin": 16,
   "minLengthUserPassword": 8,
   "maxLengthUserPassword": 16,
+  "requiredUserFirstName": true,
+  "requiredUserLastName": true,
   "requiredUserBirthday": false,
   "requiredUserEmail": true,
   "requiredUserSecret": false,

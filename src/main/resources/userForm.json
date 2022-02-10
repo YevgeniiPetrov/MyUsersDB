@@ -1,19 +1,11 @@
 {
   "action": "registration",
-  "user": {
-    "userData": {
-      "firstName": "ivan",
-      "lastName": "ivanov",
-      "birthday": "23.09.1990",
-      "email": "ivan.ivanov@gmail.com"
-    },
-    "authentication": {
-      "login": "ivanov.i",
-      "password": null
-    },
-    "secret": {
-      "question": "favorite sport",
-      "answer": "soccer"
-    }
-  }
+  "firstName": "ivan",
+  "lastName": "ivanov",
+  "birthday": "23.09.1990",
+  "email": "ivan.ivanov@gmail.com",
+  "login": "ivanov.i",
+  "password": null,
+  "secretQuestion": "favorite sport",
+  "secretAnswer": "soccer"
 }
