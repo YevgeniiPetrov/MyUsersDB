@@ -26,10 +26,12 @@ public class User {
         return authentication;
     }
 
-    public boolean recoveryCheck(String firstName, String lastName, Date birthday, String email, String login, String password, String question, String answer) {
+    public boolean recoveryCheck(
+            String firstName, String lastName, Date birthday, String email,
+            String login, String password, String secretQuestion, String secretAnswer) {
         return (userData.getPercentCorrectData(firstName, lastName, birthday, email) +
                 authentication.getPercentCorrectData(login, password) +
-                secret.getPercentCorrectData(question, answer)) >= Config.getInstance().PERCENT_CORRECT_USER_DATA_TOTAL;
+                secret.getPercentCorrectData(secretQuestion, secretAnswer)) >= Config.getInstance().PERCENT_CORRECT_USER_DATA_TOTAL;
     }
 
     @Override

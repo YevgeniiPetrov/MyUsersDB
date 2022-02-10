@@ -46,7 +46,8 @@ public class CheckUserForm {
     }
 
     public static boolean registrationCheck(UserForm userForm) {
-        return checkFirstName(userForm.getFirstName()) &&
+        return userForm != null &&
+                checkFirstName(userForm.getFirstName()) &&
                 checkLastName(userForm.getLastName()) &&
                 checkLogin(userForm.getLogin()) &&
                 checkPassword(userForm.getPassword()) &&
@@ -57,6 +58,18 @@ public class CheckUserForm {
     }
 
     public static boolean changePasswordCheck(UserForm userForm, User userFromDB) {
-        return checkPassword(userForm.getPassword());
+        return userForm != null &&
+                userFromDB != null &&
+                checkPassword(userForm.getPassword()) &&
+                userFromDB.recoveryCheck(
+                        userForm.getFirstName(), userForm.getLastName(), userForm.getBirthday(), userForm.getEmail(),
+                        userForm.getLogin(), userForm.getPassword(), userForm.getSecretQuestion(), userForm.getSecretAnswer());
+    }
+
+    public static boolean changeDataCheck(UserForm userForm, User userFromDB) {
+        return userForm != null &&
+                userFromDB != null &&
+                userFromDB.getAuthentication().checkLogin(userForm.getLogin()) &&
+                userFromDB.getAuthentication().checkPassword(userForm.getPassword());
     }
 }

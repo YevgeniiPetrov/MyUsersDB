@@ -38,7 +38,7 @@ public class UserData {
     public int getPercentCorrectData(String firstName, String lastName, Date birthday, String email) {
         Config config = Config.getInstance();
         return (checkFirstName(firstName) ? config.PERCENT_CORRECT_USER_FIRST_NAME : config.ZERO) +
-                (checkFirstName(lastName) ? config.PERCENT_CORRECT_USER_LAST_NAME : config.ZERO) +
+                (checkLastName(lastName) ? config.PERCENT_CORRECT_USER_LAST_NAME : config.ZERO) +
                 (checkBirthday(birthday) ? config.PERCENT_CORRECT_USER_BIRTHDAY : config.ZERO) +
                 (checkEmail(email) ? config.PERCENT_CORRECT_USER_EMAIL : config.ZERO);
     }

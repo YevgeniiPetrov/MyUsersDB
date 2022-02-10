@@ -26,5 +26,6 @@ public class Main {
         UserForm userForm = Parser.parseUserForm("../MyUsersDB/src/main/resources/userForm.json");
         // User user = Application.getInstance().findUserInDB("test.ttt");
         System.out.println(userForm);
+        System.out.println(String.CASE_INSENSITIVE_ORDER.getClass());
     }
 }
