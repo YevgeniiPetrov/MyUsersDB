@@ -13,6 +13,22 @@ public class Secret {
     @JsonProperty
     private String answer;
 
+    public String getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(String question) {
+        this.question = question;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
+    }
+
     public boolean checkQuestion(String question) {
         return Objects.equals(question, this.question);
     }

@@ -22,8 +22,28 @@ public class User {
         this.authentication = authentication;
     }
 
+    public UserData getUserData() {
+        return userData;
+    }
+
+    public void setUserData(UserData userData) {
+        this.userData = userData;
+    }
+
     public Authentication getAuthentication() {
         return authentication;
+    }
+
+    public void setAuthentication(Authentication authentication) {
+        this.authentication = authentication;
+    }
+
+    public Secret getSecret() {
+        return secret;
+    }
+
+    public void setSecret(Secret secret) {
+        this.secret = secret;
     }
 
     public boolean recoveryCheck(

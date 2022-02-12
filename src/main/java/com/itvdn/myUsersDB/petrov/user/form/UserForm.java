@@ -22,10 +22,8 @@ public class UserForm {
     private boolean isEmailSet;
     @JsonProperty
     private String login;
-    private boolean isLoginSet;
     @JsonProperty
     private String password;
-    private boolean isPasswordSet;
     @JsonProperty
     private String secretQuestion;
     private boolean isSecretQuestionSet;
@@ -93,26 +91,8 @@ public class UserForm {
         return login;
     }
 
-    private void setLogin(String login) {
-        this.login = login;
-        this.isLoginSet = true;
-    }
-
-    public boolean isLoginSet() {
-        return isLoginSet;
-    }
-
     public String getPassword() {
         return password;
-    }
-
-    private void setPassword(String password) {
-        this.password = password;
-        this.isPasswordSet = true;
-    }
-
-    public boolean isPasswordSet() {
-        return isPasswordSet;
     }
 
     public String getSecretQuestion() {
@@ -146,21 +126,13 @@ public class UserForm {
         return "UserForm{" +
                 "action=" + action +
                 ", firstName='" + firstName + '\'' +
-                ", isFirstNameSet=" + isFirstNameSet +
                 ", lastName='" + lastName + '\'' +
-                ", isLastNameSet=" + isLastNameSet +
                 ", birthday=" + birthday +
-                ", isBirthdaySet=" + isBirthdaySet +
                 ", email='" + email + '\'' +
-                ", isEmailSet=" + isEmailSet +
                 ", login='" + login + '\'' +
-                ", isLoginSet=" + isLoginSet +
                 ", password='" + password + '\'' +
-                ", isPasswordSet=" + isPasswordSet +
                 ", secretQuestion='" + secretQuestion + '\'' +
-                ", isSecretQuestionSet=" + isSecretQuestionSet +
                 ", secretAnswer='" + secretAnswer + '\'' +
-                ", isSecretAnswerSet=" + isSecretAnswerSet +
                 '}';
     }
 }

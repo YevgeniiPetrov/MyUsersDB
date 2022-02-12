@@ -2,11 +2,11 @@ package com.itvdn.myUsersDB.petrov.user.form;
 
 import com.itvdn.myUsersDB.petrov.application.Config;
 import com.itvdn.myUsersDB.petrov.user.User;
-import com.itvdn.myUsersDB.petrov.utils.Encryption;
+import com.itvdn.myUsersDB.petrov.utils.Encryptor;
 
 import java.util.Date;
 
-public class CheckUserForm {
+public class Checker_ {
     private static boolean checkRequiredField(Object field, boolean configValue) {
         return !(configValue && field == null);
     }
@@ -30,7 +30,7 @@ public class CheckUserForm {
 
     private static boolean checkPassword(String password) {
         Config config = Config.getInstance();
-        return checkLengthOfField(Encryption.decrypt(password), config.MIN_LENGTH_USER_PASSWORD, config.MAX_LENGTH_USER_PASSWORD);
+        return checkLengthOfField(Encryptor.decrypt(password), config.MIN_LENGTH_USER_PASSWORD, config.MAX_LENGTH_USER_PASSWORD);
     }
 
     private static boolean checkBirthday(Date birthday) {

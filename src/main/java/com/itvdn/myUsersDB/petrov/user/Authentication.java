@@ -3,7 +3,7 @@ package com.itvdn.myUsersDB.petrov.user;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 import com.itvdn.myUsersDB.petrov.application.Config;
-import com.itvdn.myUsersDB.petrov.utils.Encryption;
+import com.itvdn.myUsersDB.petrov.utils.Encryptor;
 
 import java.util.Objects;
 
@@ -14,12 +14,24 @@ public class Authentication {
     @JsonProperty
     private String password;
 
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public boolean checkLogin(String login) {
         return Objects.equals(login, this.login);
     }
 
     public boolean checkPassword(String password) {
-        return Objects.equals(Encryption.decrypt(password), Encryption.decrypt(this.password));
+        return Objects.equals(Encryptor.decrypt(password), Encryptor.decrypt(this.password));
     }
 
     public String getLogin() {
