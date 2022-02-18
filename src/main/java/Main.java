@@ -21,11 +21,17 @@ public class Main {
 //        list.add("gfn48zgv2tn9aVWj");
 //        System.out.println(Config.getInstance().DB_PATH);
 //        new ApplicationHandler().start();
-        Application application = Application.getInstance();
-        application.initDBFile();
-        UserForm userForm = Parser.parseUserForm("../MyUsersDB/src/main/resources/userForm.json");
-        // User user = Application.getInstance().findUserInDB("test.ttt");
-        System.out.println(userForm);
-        System.out.println(String.CASE_INSENSITIVE_ORDER.getClass());
+//        Application application = Application.getInstance();
+//        application.initDBFile();
+//        UserForm userForm = Parser.parseUserForm("../MyUsersDB/src/main/resources/userForm.json");
+//        // User user = Application.getInstance().findUserInDB("test.ttt");
+//        System.out.println(userForm);
+//        System.out.println(String.CASE_INSENSITIVE_ORDER.getClass());
+        int number = 1;
+        switch (number) {
+            case 1 | 2 :
+                System.out.println("+");
+                break;
+        }
     }
 }

@@ -17,9 +17,10 @@ public class User {
 
     private User() {}
 
-    private User(UserData userData, Authentication authentication) {
+    public User(UserData userData, Authentication authentication, Secret secret) {
         this.userData = userData;
         this.authentication = authentication;
+        this.secret = secret;
     }
 
     public UserData getUserData() {

@@ -19,6 +19,16 @@ public class UserData {
     @JsonProperty
     private String email;
 
+    private UserData() {
+    }
+
+    public UserData(String firstName, String lastName, Date birthday, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthday = birthday;
+        this.email = email;
+    }
+
     public String getFirstName() {
         return firstName;
     }

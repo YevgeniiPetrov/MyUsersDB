@@ -14,6 +14,14 @@ public class Authentication {
     @JsonProperty
     private String password;
 
+    private Authentication() {
+    }
+
+    public Authentication(String login, String password) {
+        this.login = login;
+        this.password = password;
+    }
+
     public void setLogin(String login) {
         this.login = login;
     }
@@ -23,7 +31,7 @@ public class Authentication {
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.password = Encryptor.encrypt(password);
     }
 
     public boolean checkLogin(String login) {

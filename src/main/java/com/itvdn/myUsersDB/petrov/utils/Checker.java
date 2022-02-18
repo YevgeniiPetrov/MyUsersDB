@@ -1,4 +1,4 @@
-package com.itvdn.myUsersDB.petrov.user.check;
+package com.itvdn.myUsersDB.petrov.utils;
 
 import com.itvdn.myUsersDB.petrov.application.Config;
 import com.itvdn.myUsersDB.petrov.user.User;
@@ -9,44 +9,49 @@ import java.util.Objects;
 
 public class Checker {
     private static boolean isCorrectFilled(Object field, boolean isSet, boolean isRequired) {
-        return !(field == null && isSet && isRequired);
+        return (field != null || !isRequired) && isSet;
     }
 
     private static boolean isCorrectLength(String field, int minValue, int maxValue) {
         return field != null && field.length() >= minValue && field.length() <= maxValue;
     }
 
-    private static boolean checkFirstName(UserForm userForm) {
+    public static boolean checkFirstName(UserForm userForm) {
         return isCorrectFilled(userForm.getFirstName(), userForm.isFirstNameSet(), Config.getInstance().REQUIRED_USER_FIRST_NAME);
     }
 
-    private static boolean checkLastName(UserForm userForm) {
+    public static boolean checkLastName(UserForm userForm) {
         return isCorrectFilled(userForm.getLastName(), userForm.isLastNameSet(), Config.getInstance().REQUIRED_USER_LAST_NAME);
     }
 
-    private static boolean checkBirthday(UserForm userForm) {
+    public static boolean checkBirthday(UserForm userForm) {
         return isCorrectFilled(userForm.getBirthday(), userForm.isBirthdaySet(), Config.getInstance().REQUIRED_USER_BIRTHDAY);
     }
 
-    private static boolean checkEmail(UserForm userForm) {
+    public static boolean checkEmail(UserForm userForm) {
         return isCorrectFilled(userForm.getEmail(), userForm.isEmailSet(), Config.getInstance().REQUIRED_USER_EMAIL);
     }
 
-    private static boolean checkLogin(UserForm userForm) {
+    public static boolean checkLogin(UserForm userForm) {
         Config config = Config.getInstance();
         return isCorrectLength(userForm.getLogin(), config.MIN_LENGTH_USER_LOGIN, config.MAX_LENGTH_USER_LOGIN);
     }
 
-    private static boolean checkPassword(UserForm userForm) {
+    public static boolean checkPassword(UserForm userForm) {
         Config config = Config.getInstance();
         return isCorrectLength(Encryptor.decrypt(userForm.getPassword()), config.MIN_LENGTH_USER_PASSWORD, config.MAX_LENGTH_USER_PASSWORD);
     }
 
-    private static boolean checkSecretQuestion(UserForm userForm) {
+    public static boolean checkNewPassword(UserForm userForm) {
+        Config config = Config.getInstance();
+        return isCorrectLength(Encryptor.decrypt(userForm.getNewPassword()), config.MIN_LENGTH_USER_PASSWORD, config.MAX_LENGTH_USER_PASSWORD);
+    }
+
+    public static boolean checkSecretQuestion(UserForm userForm) {
         return isCorrectFilled(userForm.getSecretQuestion(), userForm.isSecretQuestionSet(), Config.getInstance().REQUIRED_USER_SECRET);
     }
 
-    private static boolean checkSecretAnswer(UserForm userForm) {
+    public static boolean checkSecretAnswer(UserForm userForm) {
         return isCorrectFilled(userForm.getSecretAnswer(), userForm.isSecretAnswerSet(), Config.getInstance().REQUIRED_USER_SECRET);
     }
 
@@ -84,5 +89,12 @@ public class Checker {
         return userForm != null &&
                 userFromDB != null &&
                 recoveryCheck(userForm, userFromDB);
+    }
+
+    public static boolean authenticationCheck(UserForm userForm, User userFromDB) {
+        return userForm != null &&
+                userFromDB != null &&
+                Objects.equals(userForm.getLogin(), userFromDB.getAuthentication().getLogin()) &&
+                Objects.equals(userForm.getPassword(), Encryptor.decrypt(userFromDB.getAuthentication().getPassword()));
     }
 }

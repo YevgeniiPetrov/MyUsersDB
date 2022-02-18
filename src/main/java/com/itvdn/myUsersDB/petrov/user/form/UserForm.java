@@ -25,6 +25,9 @@ public class UserForm {
     @JsonProperty
     private String password;
     @JsonProperty
+    private String newPassword;
+    private boolean isNewPasswordSet;
+    @JsonProperty
     private String secretQuestion;
     private boolean isSecretQuestionSet;
     @JsonProperty
@@ -93,6 +96,19 @@ public class UserForm {
 
     public String getPassword() {
         return password;
+    }
+
+    public String getNewPassword() {
+        return newPassword;
+    }
+
+    private void setNewPassword(String newPassword) {
+        this.newPassword = newPassword;
+        this.isNewPasswordSet = true;
+    }
+
+    public boolean isNewPasswordSet() {
+        return isNewPasswordSet;
     }
 
     public String getSecretQuestion() {
