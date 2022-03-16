@@ -52,6 +52,10 @@ public class Logger {
         return directory;
     }
 
+    private static String getSubMessage(Action action, User user) {
+        return action + " for login '" + user.getAuthentication().getLogin() + "' ";
+    }
+
     private static void log(LoggerType loggerType, String message) {
         try(BufferedWriter writer = new BufferedWriter(new FileWriter(getInstance().log, true))) {
             String line = "(" + LocalDate.now() + " " + LocalTime.now() + ") " + loggerType + " - " + message + "\n";
@@ -66,8 +70,7 @@ public class Logger {
     }
 
     public static void info(Action action, User user) {
-        String message = action + " for login '" + user.getAuthentication().getLogin() + "' successful";
-        info(message);
+        info(getSubMessage(action, user) + "successful");
     }
 
     public static void info(Action action, String message) {
@@ -75,8 +78,7 @@ public class Logger {
     }
 
     public static void authenticationIsIncorrect(Action action, User user) {
-        String message = action + " for login '" + user.getAuthentication().getLogin() + "' unsuccessful: login or password is incorrect";
-        info(message);
+        info(getSubMessage(action, user) + "unsuccessful: login or password is incorrect");
     }
 
     public static void error(String message) {
