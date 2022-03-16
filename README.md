@@ -1,5 +1,5 @@
 # MyUsersDB
-#### Данные для регистрации - в зависмости от параметров в конфиг-файле (обязательные / необязательные):
+#### Данные для регистрации - в зависмости от параметров в [конфиг-файле](src/main/resources/config.json) (обязательные / необязательные):
 - имя
 - фамилия
 - дата рождения
@@ -18,8 +18,8 @@
    - [EmailEmptyException](src/main/java/com/itvdn/myUsersDB/petrov/exception/EmailEmptyException.java) - *исключение для случаев, когда необходимо отправить информацию пользователю на его email, но email не указан / пустой*
    - [UnsupportedAction](src/main/java/com/itvdn/myUsersDB/petrov/exception/UnsupportedAction.java) - *исключение для случаев, когда файл (форма), который предоставил пользователь, не обработан в [основном классе приложения](src/main/java/com/itvdn/myUsersDB/petrov/application/Application.java)*
    - [UserExistException](src/main/java/com/itvdn/myUsersDB/petrov/exception/UserExistException.java) - *пользователь существует*
-   - [UserNotExistException](src/main/java/com/itvdn/myUsersDB/petrov/exception/UserNotExistException.java) - *пользовательне существует*
+   - [UserNotExistException](src/main/java/com/itvdn/myUsersDB/petrov/exception/UserNotExistException.java) - *пользовательне не существует*
 - **[user](src/main/java/com/itvdn/myUsersDB/petrov/user)**
    - **[form](src/main/java/com/itvdn/myUsersDB/petrov/user/form)**
-     - [Action](src/main/java/com/itvdn/myUsersDB/petrov/user/form/Action.java) - *перечень действий (регистрация, смена пароля, изменение данныых и т.п.), доступных пользователю*
-     - [UserForm](src/main/java/com/itvdn/myUsersDB/petrov/user/form/UserForm.java) - *файл (форма) с полями (логин, пароль, имя, фамилия и т.п.) пользователя, с которой необходимо выполнить действвие (регистрация, смена пароля, изменение данныых и т.п.)*
+     - [Action](src/main/java/com/itvdn/myUsersDB/petrov/user/form/Action.java) - *перечень действий (регистрация, смена пароля, изменение данных и т.п.), доступных пользователю*
+     - [UserForm](src/main/java/com/itvdn/myUsersDB/petrov/user/form/UserForm.java) - *файл (форма) с полями (логин, пароль, имя, фамилия и т.п.) пользователя, с которой необходимо выполнить действвие (регистрация, смена пароля, изменение данных и т.п.)*
