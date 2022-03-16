@@ -8,7 +8,7 @@
     },
     "authentication" : {
       "login" : "ivanov.i",
-      "password" : "UTFpqCimWQMen+ySzj4WmgpDRyKVkIOd1TfpqHzL65o="
+      "password" : "wwE30FpY6ps+NHzGRqUBmZaJMHJeP94uIYw1KIIbVGM="
     },
     "secret" : {
       "question" : "favorite sport",
@@ -24,7 +24,7 @@
     },
     "authentication" : {
       "login" : "sidorov.v",
-      "password" : "b9u3vF8hGKaz574icaHm40LdTWsbIGq0G10fVBYiPjM="
+      "password" : "ZvL14ZgvF7Fs8esSy5wHZo5JMJiG5ogEE9VssGPKuVw="
     },
     "secret" : {
       "question" : "favorite drink",
@@ -40,11 +40,11 @@
     },
     "authentication" : {
       "login" : "kolia.k",
-      "password" : "MrgEMC38H1N8RXgorz4vgwnRWa2wVh2aN7YfwX8G4k0="
+      "password" : "eADtMWxqoFk/GcRFSs9qUdPreKRdrcpmVVN5jmhT1Uo="
     },
     "secret" : {
-      "question" : "done",
-      "answer" : "test"
+      "question" : "test",
+      "answer" : "done"
     }
   }
 }

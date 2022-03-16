@@ -66,7 +66,7 @@ public class Logger {
     }
 
     public static void info(Action action, User user) {
-        String message = action + " for login " + user.getAuthentication().getLogin() + "' successful";
+        String message = action + " for login '" + user.getAuthentication().getLogin() + "' successful";
         info(message);
     }
 
@@ -75,7 +75,7 @@ public class Logger {
     }
 
     public static void authenticationIsIncorrect(Action action, User user) {
-        String message = action + " for login " + user.getAuthentication().getLogin() + "' unsuccessful: login or password is incorrect";
+        String message = action + " for login '" + user.getAuthentication().getLogin() + "' unsuccessful: login or password is incorrect";
         info(message);
     }
 

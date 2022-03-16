@@ -45,6 +45,14 @@
     "secretAnswer": "done"
   },
   {
+    "action": "registration",
+    "email": "max.max@gmail.com",
+    "login": "max.max",
+    "password": "DCkjCdCPKQMThUGw",
+    "secretQuestion": "hello",
+    "secretAnswer": "world"
+  },
+  {
     "action": "sendUserData",
     "firstName": "kolia",
     "lastName": "kolia",
@@ -71,7 +79,7 @@
     "firstName": "ivan",
     "lastName": "ivanov",
     "birthday": "23.09.1990",
-    "email": "ivan.ivanov@gmail.com",
+    "email": null,
     "login": "ivanov.i",
     "password": "ttt",
     "secretQuestion": "favorite sport",
