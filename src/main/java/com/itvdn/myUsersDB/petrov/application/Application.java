@@ -69,6 +69,8 @@ public class Application {
                     } catch (UserExistException e) {
                         Logger.error(action, e);
                     }
+                } else {
+                    Logger.info(action, " conditions not met for user '" + userForm.getLogin() + "'");
                 }
                 break;
             default:
