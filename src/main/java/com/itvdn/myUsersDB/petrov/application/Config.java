@@ -3,6 +3,7 @@ package com.itvdn.myUsersDB.petrov.application;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.itvdn.myUsersDB.petrov.utils.Logger;
 
 import java.io.File;
 import java.io.IOException;
@@ -31,6 +32,7 @@ public class Config {
     public final int ZERO = 0;
     public final String DB_PATH;
     public final String USER_FORMS;
+    public final String LOGS_PATH;
 
     @JsonCreator
     private Config(
@@ -53,7 +55,8 @@ public class Config {
             @JsonProperty("percentCorrectUserSecretAnswer") int percentCorrectUserSecretAnswer,
             @JsonProperty("percentCorrectUserDataTotal") int percentCorrectUserDataTotal,
             @JsonProperty("DBPath") String DBPath,
-            @JsonProperty("userForms") String userForms) {
+            @JsonProperty("userForms") String userForms,
+            @JsonProperty("logsPath") String logsPath) {
         MIN_LENGTH_USER_LOGIN = minLengthUserLogin;
         MAX_LENGTH_USER_LOGIN = maxLengthUserLogin;
         MIN_LENGTH_USER_PASSWORD = minLengthUserPassword;
@@ -74,17 +77,19 @@ public class Config {
         PERCENT_CORRECT_USER_DATA_TOTAL = percentCorrectUserDataTotal;
         DB_PATH = DBPath;
         USER_FORMS = userForms;
+        LOGS_PATH = logsPath;
     }
 
     private static Config parseConfig() {
         ObjectMapper objectMapper = new ObjectMapper();
+        Config config = null;
         try {
-            return objectMapper.readValue(new File(CONFIG_PATH), Config.class);
+            config = objectMapper.readValue(new File(CONFIG_PATH), Config.class);
         } catch (IOException e) {
-            e.printStackTrace();
+            Logger.error(e.getMessage());
             System.exit(1);
         }
-        return null;
+        return config;
     }
 
     public static Config getInstance() {

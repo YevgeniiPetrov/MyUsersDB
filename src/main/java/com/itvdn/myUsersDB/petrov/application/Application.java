@@ -1,5 +1,6 @@
 package com.itvdn.myUsersDB.petrov.application;
 
+import com.itvdn.myUsersDB.petrov.exception.EmailEmptyException;
 import com.itvdn.myUsersDB.petrov.exception.UnsupportedAction;
 import com.itvdn.myUsersDB.petrov.exception.UserExistException;
 import com.itvdn.myUsersDB.petrov.exception.UserNotExistException;
@@ -7,9 +8,9 @@ import com.itvdn.myUsersDB.petrov.user.Authentication;
 import com.itvdn.myUsersDB.petrov.user.Secret;
 import com.itvdn.myUsersDB.petrov.user.User;
 import com.itvdn.myUsersDB.petrov.user.UserData;
-import com.itvdn.myUsersDB.petrov.utils.Checker;
+import com.itvdn.myUsersDB.petrov.user.form.Action;
+import com.itvdn.myUsersDB.petrov.utils.*;
 import com.itvdn.myUsersDB.petrov.user.form.UserForm;
-import com.itvdn.myUsersDB.petrov.utils.Parser;
 
 import java.io.File;
 
@@ -33,11 +34,11 @@ public class Application {
         }
     }
 
-    public User findUserInDB(String login) {
+    private User findUserInDB(String login) {
         return Parser.parseUser(login, Config.getInstance().DB_PATH);
     }
 
-    public boolean addUserToDB(User user) throws UserExistException {
+    private boolean addUserToDB(User user) throws UserExistException {
         String login = user.getAuthentication().getLogin();
         if (instance.findUserInDB(login) != null) {
             throw new UserExistException(login);
@@ -45,8 +46,8 @@ public class Application {
         return updateUserInDB(user);
     }
 
-    public boolean updateUserInDB(User user) {
-        return Parser.addToJson(user, Config.getInstance().DB_PATH);
+    private boolean updateUserInDB(User user) {
+        return Parser.addUserToJson(user, Config.getInstance().DB_PATH);
     }
 
     private UserForm[] getUserForms() {
@@ -54,17 +55,19 @@ public class Application {
     }
 
     private void processUserForm(UserForm userForm) {
-        switch (userForm.getAction()) {
+        Action action = userForm.getAction();
+        switch (action) {
             case REGISTRATION:
                 if (Checker.registrationCheck(userForm)) {
                     UserData userData = new UserData(userForm.getFirstName(), userForm.getLastName(), userForm.getBirthday(), userForm.getEmail());
-                    Authentication authentication = new Authentication(userForm.getLogin(), userForm.getPassword());
+                    Authentication authentication = new Authentication(userForm.getLogin(), Encryptor.encrypt(userForm.getPassword()));
                     Secret secret = new Secret(userForm.getSecretQuestion(), userForm.getSecretAnswer());
                     User user = new User(userData, authentication, secret);
                     try {
                         addUserToDB(user);
+                        Logger.info(action, user);
                     } catch (UserExistException e) {
-                        e.printStackTrace();
+                        Logger.error(action, e);
                     }
                 }
                 break;
@@ -74,15 +77,18 @@ public class Application {
                     try {
                         throw new UserNotExistException(userForm.getLogin());
                     } catch (UserNotExistException e) {
-                        e.printStackTrace();
+                        Logger.error(action, e);
                         break;
                     }
                 }
                 switch (userForm.getAction()) {
                     case CHANGE_PASSWORD:
                         if (Checker.changePasswordCheck(userForm, user) && Checker.checkNewPassword(userForm)) {
-                            user.getAuthentication().setPassword(userForm.getNewPassword());
+                            user.getAuthentication().setPassword(Encryptor.encrypt(userForm.getPassword()));
                             updateUserInDB(user);
+                            Logger.info(action, user);
+                        } else {
+                            Logger.info(action, "There is not enough data to change the password or the new password does not meet the requirements");
                         }
                         break;
                     case CHANGE_USER_DATA:
@@ -100,6 +106,9 @@ public class Application {
                                 user.getUserData().setEmail(userForm.getEmail());
                             }
                             updateUserInDB(user);
+                            Logger.info(action, user);
+                        } else {
+                            Logger.authenticationIsIncorrect(action, user);
                         }
                         break;
                     case CHANGE_SECRET_DATA:
@@ -111,23 +120,40 @@ public class Application {
                                 user.getSecret().setAnswer(userForm.getSecretAnswer());
                             }
                             updateUserInDB(user);
+                            Logger.info(action, user);
+                        } else {
+                            Logger.authenticationIsIncorrect(action, user);
                         }
                         break;
                     case SEND_USER_DATA:
                         if (Checker.authenticationCheck(userForm, user)) {
-                            // TODO
+                            try {
+                                Mailer.sendUserData(user);
+                                Logger.info(action, user);
+                            } catch (EmailEmptyException e) {
+                                Logger.error(action, e);
+                            }
+                        } else {
+                            Logger.authenticationIsIncorrect(action, user);
                         }
                         break;
                     case SEND_SECRET_DATA:
                         if (Checker.authenticationCheck(userForm, user)) {
-                            // TODO
+                            try {
+                                Mailer.sendSecretData(user);
+                                Logger.info(action, user);
+                            } catch (EmailEmptyException e) {
+                                Logger.error(action, e);
+                            }
+                        } else {
+                            Logger.authenticationIsIncorrect(action, user);
                         }
                         break;
                     default:
                         try {
                             throw new UnsupportedAction(userForm.getAction());
                         } catch (UnsupportedAction e) {
-                            e.printStackTrace();
+                            Logger.error(action, e);
                         }
                         break;
                 }
@@ -136,6 +162,8 @@ public class Application {
     }
 
     public void processUserForms() {
-
+        for (UserForm userForm : getUserForms()) {
+            processUserForm(userForm);
+        }
     }
 }

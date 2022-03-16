@@ -1,5 +1,5 @@
 {
-  "minLengthUserLogin": 8,
+  "minLengthUserLogin": 5,
   "maxLengthUserLogin": 16,
   "minLengthUserPassword": 8,
   "maxLengthUserPassword": 16,
@@ -18,5 +18,6 @@
   "percentCorrectUserSecretAnswer": 15,
   "percentCorrectUserDataTotal": 70,
   "DBPath": "../MyUsersDB/src/main/resources/users.json",
-  "userForms": "../MyUsersDB/src/main/resources/userForms.json"
+  "userForms": "../MyUsersDB/src/main/resources/userForms.json",
+  "logsPath": "../MyUsersDB/src/main/resources/logs/"
 }

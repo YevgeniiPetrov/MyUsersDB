@@ -3,7 +3,6 @@ package com.itvdn.myUsersDB.petrov.utils;
 import com.itvdn.myUsersDB.petrov.application.Config;
 import com.itvdn.myUsersDB.petrov.user.User;
 import com.itvdn.myUsersDB.petrov.user.form.UserForm;
-import com.itvdn.myUsersDB.petrov.utils.Encryptor;
 
 import java.util.Objects;
 
@@ -39,12 +38,12 @@ public class Checker {
 
     public static boolean checkPassword(UserForm userForm) {
         Config config = Config.getInstance();
-        return isCorrectLength(Encryptor.decrypt(userForm.getPassword()), config.MIN_LENGTH_USER_PASSWORD, config.MAX_LENGTH_USER_PASSWORD);
+        return isCorrectLength(userForm.getPassword(), config.MIN_LENGTH_USER_PASSWORD, config.MAX_LENGTH_USER_PASSWORD);
     }
 
     public static boolean checkNewPassword(UserForm userForm) {
         Config config = Config.getInstance();
-        return isCorrectLength(Encryptor.decrypt(userForm.getNewPassword()), config.MIN_LENGTH_USER_PASSWORD, config.MAX_LENGTH_USER_PASSWORD);
+        return isCorrectLength(userForm.getNewPassword(), config.MIN_LENGTH_USER_PASSWORD, config.MAX_LENGTH_USER_PASSWORD);
     }
 
     public static boolean checkSecretQuestion(UserForm userForm) {

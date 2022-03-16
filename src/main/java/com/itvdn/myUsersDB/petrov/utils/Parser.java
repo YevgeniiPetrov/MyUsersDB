@@ -3,22 +3,11 @@ package com.itvdn.myUsersDB.petrov.utils;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.itvdn.myUsersDB.petrov.user.User;
-import com.itvdn.myUsersDB.petrov.user.form.UserForm;
 
 import java.io.File;
 import java.io.IOException;
 
 public class Parser {
-    public static User parseUser(String filePath) {
-        User user = null;
-        try {
-            user = new ObjectMapper().readValue(new File(filePath), User.class);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return user;
-    }
-
     public static User parseUser(String login, String filePath) {
         ObjectMapper objectMapper = new ObjectMapper();
         User user = null;
@@ -28,19 +17,9 @@ public class Parser {
                 user = objectMapper.treeToValue(node.get(login), User.class);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            Logger.error(e.getMessage());
         }
         return user;
-    }
-
-    public static UserForm parseUserForm(String filePath) {
-        UserForm userForm = null;
-        try {
-            userForm = new ObjectMapper().readValue(new File(filePath), UserForm.class);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return userForm;
     }
 
     public static void toJson(String string, String filePath) {
@@ -48,11 +27,11 @@ public class Parser {
         try {
             objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(filePath), objectMapper.readTree(string));
         } catch (IOException e) {
-            e.printStackTrace();
+            Logger.error(e.getMessage());
         }
     }
 
-    public static boolean addToJson(User user, String filePath) {
+    public static boolean addUserToJson(User user, String filePath) {
         boolean isAdded = true;
         ObjectMapper objectMapper = new ObjectMapper();
         File file = new File(filePath);
@@ -62,7 +41,7 @@ public class Parser {
             objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, node);
         } catch (IOException e) {
             isAdded = false;
-            e.printStackTrace();
+            Logger.error(e.getMessage());
         }
         return isAdded;
     }
@@ -72,7 +51,7 @@ public class Parser {
         try {
             objects = new ObjectMapper().readValue(new File(filePath), clazz);
         } catch (IOException e) {
-            e.printStackTrace();
+            Logger.error(e.getMessage());
         }
         return objects;
     }

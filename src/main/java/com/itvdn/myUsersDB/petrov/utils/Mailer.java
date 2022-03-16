@@ -4,22 +4,19 @@ import com.itvdn.myUsersDB.petrov.exception.EmailEmptyException;
 import com.itvdn.myUsersDB.petrov.user.User;
 
 public class Mailer {
-    private static boolean checkEmail(User user) {
-        return user.getUserData().getEmail() != null;
-    }
-
-    public static void sendUserData(User user) {
-        String info = "Send user data for login '" + user.getAuthentication().getLogin() + "' ";
-        if (checkEmail(user)) {
-            String userInfo = "email: " +
-                    "";
+    private static void send(User user, String message) throws EmailEmptyException {
+        if (user.getUserData().getEmail() != null) {
             // TODO for send
         } else {
-            try {
-                throw new EmailEmptyException();
-            } catch (EmailEmptyException e) {
-                e.printStackTrace();
-            }
+            throw new EmailEmptyException(user.getAuthentication().getLogin());
         }
+    }
+
+    public static void sendUserData(User user) throws EmailEmptyException {
+        send(user, user.getUserData().toString());
+    }
+
+    public static void sendSecretData(User user) throws EmailEmptyException {
+        send(user, user.getSecret().toString());
     }
 }
