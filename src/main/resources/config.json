@@ -1,0 +1,23 @@
+{
+  "minLengthUserLogin": 5,
+  "maxLengthUserLogin": 16,
+  "minLengthUserPassword": 8,
+  "maxLengthUserPassword": 16,
+  "requiredUserFirstName": true,
+  "requiredUserLastName": true,
+  "requiredUserBirthday": false,
+  "requiredUserEmail": true,
+  "requiredUserSecret": false,
+  "percentCorrectUserFirstName": 5,
+  "percentCorrectUserLastName": 5,
+  "percentCorrectUserLogin": 20,
+  "percentCorrectUserPassword": 25,
+  "percentCorrectUserBirthday": 5,
+  "percentCorrectUserEmail": 10,
+  "percentCorrectUserSecretQuestion": 15,
+  "percentCorrectUserSecretAnswer": 15,
+  "percentCorrectUserDataTotal": 70,
+  "DBPath": "../MyUsersDB/src/main/resources/users.json",
+  "userForms": "../MyUsersDB/src/main/resources/userForms.json",
+  "logsPath": "../MyUsersDB/src/main/resources/logs/"
+}

@@ -1,0 +1,88 @@
+[
+  {
+    "action": "registration",
+    "firstName": "ivan",
+    "lastName": "ivanov",
+    "birthday": "23.09.1990",
+    "email": "ivan.ivanov@gmail.com",
+    "login": "ivanov.i",
+    "password": "jz8HfR9bnueesxAR",
+    "secretQuestion": "favorite sport",
+    "secretAnswer": "soccer"
+  },
+  {
+    "action": "registration",
+    "firstName": "vasia",
+    "lastName": "sidorov",
+    "birthday": "03.12.1995",
+    "email": "vasia.sidorov@gmail.com",
+    "login": "sidorov.v",
+    "password": "DCkjCdCPKQMThUGw",
+    "secretQuestion": "favorite drink",
+    "secretAnswer": "beer"
+  },
+  {
+    "action": "changePassword",
+    "firstName": "ivan",
+    "lastName": "ivanov",
+    "birthday": "23.09.1990",
+    "email": "ivan.ivanov@gmail.com",
+    "login": "ivanov.i",
+    "password": "jz8HfR9bnueesxAR",
+    "newPassword": "DCkjCdCPKQMThUGw",
+    "secretQuestion": "favorite sport",
+    "secretAnswer": "soccer"
+  },
+  {
+    "action": "registration",
+    "firstName": "kolia",
+    "lastName": "kolia",
+    "birthday": "03.12.1995",
+    "email": "kolia.kolia@gmail.com",
+    "login": "kolia.k",
+    "password": "DCkjCdCPKQMThUGw",
+    "secretQuestion": "test",
+    "secretAnswer": "done"
+  },
+  {
+    "action": "registration",
+    "email": "max.max@gmail.com",
+    "login": "max.max",
+    "password": "DCkjCdCPKQMThUGw",
+    "secretQuestion": "hello",
+    "secretAnswer": "world"
+  },
+  {
+    "action": "sendUserData",
+    "firstName": "kolia",
+    "lastName": "kolia",
+    "birthday": "03.12.1995",
+    "email": "kolia.kolia@gmail.com",
+    "login": "kolia.k",
+    "password": "DCkjCdCPKQMThUGw",
+    "secretQuestion": "test",
+    "secretAnswer": "done"
+  },
+  {
+    "action": "changeSecretData",
+    "firstName": "kolia",
+    "lastName": "kolia",
+    "birthday": "03.12.1995",
+    "email": "kolia.kolia@gmail.com",
+    "login": "kolia.k",
+    "password": "DCkjCdCPKQMThUGx",
+    "secretQuestion": "done",
+    "secretAnswer": "test"
+  },
+  {
+    "action": "sendSecretData",
+    "firstName": "ivan",
+    "lastName": "ivanov",
+    "birthday": "23.09.1990",
+    "email": null,
+    "login": "ivanov.i",
+    "password": "ttt",
+    "secretQuestion": "favorite sport",
+    "secretAnswer": "soccer"
+  }
+]

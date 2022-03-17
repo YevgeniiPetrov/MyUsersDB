@@ -1,0 +1,365 @@
+(2022-03-16 03:13:59.830817500) INFO - Application is started
+(2022-03-16 03:13:59.845817600) INFO - Config is initialized
+(2022-03-16 03:13:59.846818200) INFO - Start to process user forms
+(2022-03-16 03:13:59.983825100) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:13:59.991817900) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:13:59.991817900) INFO - Application is stopped
+(2022-03-16 03:17:44.779437300) INFO - Application is started
+(2022-03-16 03:17:44.785437500) INFO - Config is initialized
+(2022-03-16 03:17:44.786438) INFO - Start to process user forms
+(2022-03-16 03:17:44.911437900) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:17:44.917438500) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:17:44.946437100) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:17:44.948437700) ERROR - SEND_USER_DATA. User with login 'kolia.k' does not exist
+(2022-03-16 03:17:44.949438300) ERROR - CHANGE_SECRET_DATA. User with login 'kolia.k' does not exist
+(2022-03-16 03:17:44.950437800) INFO - Application is stopped
+(2022-03-16 03:19:10.330406700) INFO - Application is started
+(2022-03-16 03:19:10.335406600) INFO - Config is initialized
+(2022-03-16 03:19:10.336407400) INFO - Start to process user forms
+(2022-03-16 03:19:10.361407300) INFO - Application is stopped
+(2022-03-16 03:19:34.303194300) INFO - Application is started
+(2022-03-16 03:19:34.310192600) INFO - Config is initialized
+(2022-03-16 03:19:34.310192600) INFO - Start to process user forms
+(2022-03-16 03:19:34.428192600) INFO - REGISTRATION for login kolia.kddd' successful
+(2022-03-16 03:19:34.429192900) INFO - Application is stopped
+(2022-03-16 03:20:16.222964800) INFO - Application is started
+(2022-03-16 03:20:16.228964) INFO - Config is initialized
+(2022-03-16 03:20:16.229964400) INFO - Start to process user forms
+(2022-03-16 03:20:16.350963200) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:20:16.356964100) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:20:16.380964) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:20:16.387966600) INFO - REGISTRATION for login kolia.k' successful
+(2022-03-16 03:20:16.398962900) INFO - Application is stopped
+(2022-03-16 03:20:39.730690200) INFO - Application is started
+(2022-03-16 03:20:39.736690100) INFO - Config is initialized
+(2022-03-16 03:20:39.737690500) INFO - Start to process user forms
+(2022-03-16 03:20:39.854689900) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:20:39.861690800) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:20:39.886689500) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:20:39.892689700) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:20:39.902690100) INFO - Application is stopped
+(2022-03-16 03:20:58.137829800) INFO - Application is started
+(2022-03-16 03:20:58.144829500) INFO - Config is initialized
+(2022-03-16 03:20:58.144829500) INFO - Start to process user forms
+(2022-03-16 03:20:58.262829) INFO - Application is stopped
+(2022-03-16 03:21:07.067904200) INFO - Application is started
+(2022-03-16 03:21:07.073904200) INFO - Config is initialized
+(2022-03-16 03:21:07.074903700) INFO - Start to process user forms
+(2022-03-16 03:21:07.108904400) ERROR - CHANGE_SECRET_DATA. User with login 'kolia.kkk' does not exist
+(2022-03-16 03:21:07.109904700) INFO - Application is stopped
+(2022-03-16 03:21:26.706824500) INFO - Application is started
+(2022-03-16 03:21:26.713827300) INFO - Config is initialized
+(2022-03-16 03:21:26.714824600) INFO - Start to process user forms
+(2022-03-16 03:21:26.836823600) INFO - Application is stopped
+(2022-03-16 03:22:49.298735) INFO - ================== Application is started ==================
+(2022-03-16 03:22:49.304736400) INFO - Config is initialized
+(2022-03-16 03:22:49.305735500) INFO - Start to process user forms
+(2022-03-16 03:22:49.422736600) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:22:49.428740500) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:22:49.455734700) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:22:49.462735300) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:22:49.471734500) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:22:57.483520900) INFO - ================== Application is started ==================
+(2022-03-16 03:22:57.489520900) INFO - Config is initialized
+(2022-03-16 03:22:57.490521300) INFO - Start to process user forms
+(2022-03-16 03:22:57.618521400) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:22:57.625521600) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:22:57.655520800) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:22:57.661520700) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:22:57.671521700) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:23:48.872967900) INFO - ================== Application is started ==================
+(2022-03-16 03:23:48.878973900) INFO - Config is initialized
+(2022-03-16 03:23:48.879969700) INFO - Start to process user forms
+(2022-03-16 03:23:49.016968600) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:23:49.023968) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:23:49.054967800) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:23:49.061969900) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:23:49.066967900) INFO - test
+(2022-03-16 03:23:49.072969200) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:28:16.428774100) INFO - ================== Application is started ==================
+(2022-03-16 03:28:16.434767500) INFO - Config is initialized
+(2022-03-16 03:28:16.434767500) INFO - Start to process user forms
+(2022-03-16 03:28:16.550768500) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:28:16.557767) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:28:16.590767900) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:28:16.596767600) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:28:16.610767300) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:28:34.007806300) INFO - ================== Application is started ==================
+(2022-03-16 03:28:34.015807300) INFO - Config is initialized
+(2022-03-16 03:28:34.016807) INFO - Start to process user forms
+(2022-03-16 03:28:34.129797) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:28:34.135799400) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:28:34.161796800) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:28:34.168798500) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:28:34.179798700) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:33:18.477550300) INFO - ================== Application is started ==================
+(2022-03-16 03:33:18.484549) INFO - Config is initialized
+(2022-03-16 03:33:18.484549) INFO - Start to process user forms
+(2022-03-16 03:33:18.602550100) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:33:18.608548100) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:33:18.635549) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:33:18.642551300) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:33:18.653548500) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:33:27.894612100) INFO - ================== Application is started ==================
+(2022-03-16 03:33:27.901614900) INFO - Config is initialized
+(2022-03-16 03:33:27.901614900) INFO - Start to process user forms
+(2022-03-16 03:33:28.017619300) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:33:28.024612100) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:33:28.047614) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:33:28.053612700) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:33:28.062614400) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:33:48.395595600) INFO - ================== Application is started ==================
+(2022-03-16 03:33:48.401595600) INFO - Config is initialized
+(2022-03-16 03:33:48.402596700) INFO - Start to process user forms
+(2022-03-16 03:33:48.533601700) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:33:48.540595900) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:33:48.569597900) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:33:48.577595800) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:33:48.591595400) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:34:43.505851500) INFO - ================== Application is started ==================
+(2022-03-16 03:34:43.512852900) INFO - Config is initialized
+(2022-03-16 03:34:43.512852900) INFO - Start to process user forms
+(2022-03-16 03:34:43.646852200) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:34:43.654851800) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:34:43.689852200) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:34:43.695851300) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:34:43.707851) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:35:06.295308200) INFO - ================== Application is started ==================
+(2022-03-16 03:35:06.301308700) INFO - Config is initialized
+(2022-03-16 03:35:06.302308800) INFO - Start to process user forms
+(2022-03-16 03:35:06.414308) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:35:06.421309800) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:35:06.449308100) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:35:06.455308700) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:35:06.466308500) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:35:33.092977) INFO - ================== Application is started ==================
+(2022-03-16 03:35:33.098971900) INFO - Config is initialized
+(2022-03-16 03:35:33.099972400) INFO - Start to process user forms
+(2022-03-16 03:35:33.233971200) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:35:33.240970900) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:35:33.266971500) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:35:33.273972900) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:35:33.285970800) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:35:48.702318) INFO - ================== Application is started ==================
+(2022-03-16 03:35:48.708318500) INFO - Config is initialized
+(2022-03-16 03:35:48.709319200) INFO - Start to process user forms
+(2022-03-16 03:35:48.827323600) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:35:48.833317800) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:35:48.863319200) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:35:48.869318800) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:35:48.879317400) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:36:24.241276800) INFO - ================== Application is started ==================
+(2022-03-16 03:36:24.248278200) INFO - Config is initialized
+(2022-03-16 03:36:24.249276800) INFO - Start to process user forms
+(2022-03-16 03:36:24.365277) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:36:24.372276300) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:36:24.407276) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:36:24.413276500) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:36:24.424276600) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:37:55.132769500) INFO - ================== Application is started ==================
+(2022-03-16 03:37:55.139768300) INFO - Config is initialized
+(2022-03-16 03:37:55.140768800) INFO - Start to process user forms
+(2022-03-16 03:37:55.182768300) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:37:55.187768600) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:37:55.209769800) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:37:55.214769400) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:37:55.282768700) INFO - Send message 'com.itvdn.myUsersDB.petrov.user.UserData@3835c46' to 'kolia.kolia@gmail.com' successful
+(2022-03-16 03:37:55.293768200) INFO - CHANGE_SECRET_DATA for login kolia.k' successful
+(2022-03-16 03:37:55.294768200) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:41:18.042478700) INFO - ================== Application is started ==================
+(2022-03-16 03:41:18.063478) INFO - Config is initialized
+(2022-03-16 03:41:18.064477900) INFO - Start to process user forms
+(2022-03-16 03:41:18.179477800) INFO - REGISTRATION for login ivanov.i' successful
+(2022-03-16 03:41:18.192477900) INFO - REGISTRATION for login sidorov.v' successful
+(2022-03-16 03:41:18.201479100) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:41:18.208477100) INFO - REGISTRATION for login kolia.k' successful
+(2022-03-16 03:41:18.216478800) INFO - Send message 'com.itvdn.myUsersDB.petrov.user.UserData@56620197' to 'kolia.kolia@gmail.com' successful
+(2022-03-16 03:41:18.227478) INFO - CHANGE_SECRET_DATA for login kolia.k' successful
+(2022-03-16 03:41:18.228477700) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:42:30.111205600) INFO - ================== Application is started ==================
+(2022-03-16 03:42:30.118205800) INFO - Config is initialized
+(2022-03-16 03:42:30.119205700) INFO - Start to process user forms
+(2022-03-16 03:42:30.242205700) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:42:30.247205) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:42:30.270205100) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:42:30.274207400) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:42:30.282206600) INFO - Send message 'com.itvdn.myUsersDB.petrov.user.UserData@7193666c' to 'kolia.kolia@gmail.com' successful
+(2022-03-16 03:42:30.294205100) INFO - CHANGE_SECRET_DATA for login kolia.k' successful
+(2022-03-16 03:42:30.296205900) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:54:32.994796100) INFO - ================== Application is started ==================
+(2022-03-16 03:54:33.001794800) INFO - Config is initialized
+(2022-03-16 03:54:33.001794800) INFO - Start to process user forms
+(2022-03-16 03:54:33.129794500) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:54:33.134794700) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:54:33.163795300) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:54:33.168794800) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:54:33.174794700) INFO - SEND_USER_DATA for login kolia.k' successful
+(2022-03-16 03:54:33.183796100) INFO - CHANGE_SECRET_DATA for login kolia.k' successful
+(2022-03-16 03:54:33.183796100) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:55:05.108457100) INFO - ================== Application is started ==================
+(2022-03-16 03:55:05.115457200) INFO - Config is initialized
+(2022-03-16 03:55:05.115457200) INFO - Start to process user forms
+(2022-03-16 03:55:05.234880) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:55:05.239880300) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:55:05.263879700) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:55:05.269880) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:55:05.276880500) INFO - SEND_USER_DATA for login kolia.k' successful
+(2022-03-16 03:55:05.281880100) INFO - CHANGE_SECRET_DATA Login or password is incorrect
+(2022-03-16 03:55:05.282880400) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:58:34.992550800) INFO - ================== Application is started ==================
+(2022-03-16 03:58:34.998550800) INFO - Config is initialized
+(2022-03-16 03:58:34.999552200) INFO - Start to process user forms
+(2022-03-16 03:58:35.100549800) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:58:35.106551100) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:58:35.132551300) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:58:35.136551600) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:58:35.142551200) INFO - SEND_USER_DATA for login kolia.k' successful
+(2022-03-16 03:58:35.148551300) INFO - CHANGE_SECRET_DATA CHANGE_SECRET_DATA for login kolia.k' unsuccessful: login or password is incorrect
+(2022-03-16 03:58:35.149550800) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:59:15.309099800) INFO - ================== Application is started ==================
+(2022-03-16 03:59:15.316100400) INFO - Config is initialized
+(2022-03-16 03:59:15.317101200) INFO - Start to process user forms
+(2022-03-16 03:59:15.440105900) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:59:15.446100100) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:59:15.468100800) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:59:15.472100300) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:59:15.479101100) INFO - SEND_USER_DATA for login kolia.k' successful
+(2022-03-16 03:59:15.484105900) INFO - CHANGE_SECRET_DATA for login kolia.k' unsuccessful: login or password is incorrect
+(2022-03-16 03:59:15.485100400) INFO -  ================== Application is stopped ==================
+(2022-03-16 03:59:45.635811100) INFO - ================== Application is started ==================
+(2022-03-16 03:59:45.641817) INFO - Config is initialized
+(2022-03-16 03:59:45.642815600) INFO - Start to process user forms
+(2022-03-16 03:59:45.771810700) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 03:59:45.777812200) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 03:59:45.799811) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 03:59:45.804809700) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 03:59:45.810810100) INFO - SEND_USER_DATA for login kolia.k' successful
+(2022-03-16 03:59:45.812810800) ERROR - CHANGE_SECRET_DATA. User with login 'kolia.kddddd' does not exist
+(2022-03-16 03:59:45.812810800) INFO -  ================== Application is stopped ==================
+(2022-03-16 04:00:04.918913700) INFO - ================== Application is started ==================
+(2022-03-16 04:00:04.925912900) INFO - Config is initialized
+(2022-03-16 04:00:04.926913400) INFO - Start to process user forms
+(2022-03-16 04:00:05.046914200) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 04:00:05.052913800) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 04:00:05.076913400) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 04:00:05.081912800) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 04:00:05.087915400) INFO - SEND_USER_DATA for login kolia.k' successful
+(2022-03-16 04:00:05.092913300) INFO - CHANGE_SECRET_DATA for login kolia.k' unsuccessful: login or password is incorrect
+(2022-03-16 04:00:05.093912900) INFO -  ================== Application is stopped ==================
+(2022-03-16 04:00:43.878996300) INFO - ================== Application is started ==================
+(2022-03-16 04:00:43.885003400) INFO - Config is initialized
+(2022-03-16 04:00:43.885996400) INFO - Start to process user forms
+(2022-03-16 04:00:44.005995700) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 04:00:44.013996700) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 04:00:44.041995600) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 04:00:44.048001400) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 04:00:44.054997) INFO - SEND_USER_DATA for login kolia.k' successful
+(2022-03-16 04:00:44.060996700) INFO - CHANGE_SECRET_DATA for login kolia.k' unsuccessful: login or password is incorrect
+(2022-03-16 04:00:44.065996) INFO - SEND_SECRET_DATA for login ivanov.i' unsuccessful: login or password is incorrect
+(2022-03-16 04:00:44.066996500) INFO -  ================== Application is stopped ==================
+(2022-03-16 13:43:21.324969) INFO - ================== Application is started ==================
+(2022-03-16 13:43:21.339975800) INFO - Config is initialized
+(2022-03-16 13:43:21.339975800) INFO - Start to process user forms
+(2022-03-16 13:43:21.457969500) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 13:43:21.463969800) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 13:43:21.496971200) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 13:43:21.502968900) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 13:43:21.507968200) INFO - SEND_USER_DATA for login kolia.k' successful
+(2022-03-16 13:43:21.512968500) INFO - CHANGE_SECRET_DATA for login kolia.k' unsuccessful: login or password is incorrect
+(2022-03-16 13:43:21.516968) INFO - SEND_SECRET_DATA for login ivanov.i' unsuccessful: login or password is incorrect
+(2022-03-16 13:43:21.517968200) INFO -  ================== Application is stopped ==================
+(2022-03-16 13:44:17.592502100) INFO - ================== Application is started ==================
+(2022-03-16 13:44:17.615502600) INFO - Config is initialized
+(2022-03-16 13:44:17.616502400) INFO - Start to process user forms
+(2022-03-16 13:44:17.733502900) INFO - REGISTRATION for login ivanov.i' successful
+(2022-03-16 13:44:17.739503100) INFO - REGISTRATION for login sidorov.v' successful
+(2022-03-16 13:44:17.748501300) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 13:44:17.755502) INFO - REGISTRATION for login kolia.k' successful
+(2022-03-16 13:44:17.761503) INFO - SEND_USER_DATA for login kolia.k' successful
+(2022-03-16 13:44:17.766502) INFO - CHANGE_SECRET_DATA for login kolia.k' unsuccessful: login or password is incorrect
+(2022-03-16 13:44:17.772502) INFO - SEND_SECRET_DATA for login ivanov.i' unsuccessful: login or password is incorrect
+(2022-03-16 13:44:17.773501900) INFO -  ================== Application is stopped ==================
+(2022-03-16 13:46:20.381605800) INFO - ================== Application is started ==================
+(2022-03-16 13:46:20.404606800) INFO - Config is initialized
+(2022-03-16 13:46:20.405607400) INFO - Start to process user forms
+(2022-03-16 13:46:20.530606500) INFO - REGISTRATION for login ivanov.i' successful
+(2022-03-16 13:46:20.537612100) INFO - REGISTRATION for login sidorov.v' successful
+(2022-03-16 13:46:20.549606700) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 13:46:20.555607700) INFO - REGISTRATION for login kolia.k' successful
+(2022-03-16 13:46:20.558605800) INFO - REGISTRATION  conditions not met for user 'max.max'
+(2022-03-16 13:46:20.564611600) INFO - SEND_USER_DATA for login kolia.k' successful
+(2022-03-16 13:46:20.569606300) INFO - CHANGE_SECRET_DATA for login kolia.k' unsuccessful: login or password is incorrect
+(2022-03-16 13:46:20.575605800) INFO - SEND_SECRET_DATA for login ivanov.i' unsuccessful: login or password is incorrect
+(2022-03-16 13:46:20.576606200) INFO -  ================== Application is stopped ==================
+(2022-03-16 13:48:30.609465300) INFO - ================== Application is started ==================
+(2022-03-16 13:48:30.616465300) INFO - Config is initialized
+(2022-03-16 13:48:30.616465300) INFO - Start to process user forms
+(2022-03-16 13:48:30.724465) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 13:48:30.729465700) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 13:48:30.753466300) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 13:48:30.758465800) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 13:48:30.759465300) INFO - REGISTRATION conditions not met for user 'max.max'
+(2022-03-16 13:48:30.766465800) INFO - SEND_USER_DATA for login kolia.k' successful
+(2022-03-16 13:48:30.771465800) INFO - CHANGE_SECRET_DATA for login kolia.k' unsuccessful: login or password is incorrect
+(2022-03-16 13:48:30.776465700) INFO - SEND_SECRET_DATA for login ivanov.i' unsuccessful: login or password is incorrect
+(2022-03-16 13:48:30.777465600) INFO -  ================== Application is stopped ==================
+(2022-03-16 13:48:58.827650900) INFO - ================== Application is started ==================
+(2022-03-16 13:48:58.834649300) INFO - Config is initialized
+(2022-03-16 13:48:58.835651300) INFO - Start to process user forms
+(2022-03-16 13:48:58.967770800) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 13:48:58.973771300) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 13:48:58.995770800) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 13:48:59.000772100) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 13:48:59.002773400) INFO - REGISTRATION conditions not met for user 'max.max'
+(2022-03-16 13:48:59.008770500) INFO - SEND_USER_DATA for login kolia.k' successful
+(2022-03-16 13:48:59.013770400) INFO - CHANGE_SECRET_DATA for login kolia.k' unsuccessful: login or password is incorrect
+(2022-03-16 13:48:59.018770900) INFO - SEND_SECRET_DATA for login ivanov.i' successful
+(2022-03-16 13:48:59.019770500) INFO -  ================== Application is stopped ==================
+(2022-03-16 13:49:27.124197100) INFO - ================== Application is started ==================
+(2022-03-16 13:49:27.130202300) INFO - Config is initialized
+(2022-03-16 13:49:27.131197) INFO - Start to process user forms
+(2022-03-16 13:49:27.262196800) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 13:49:27.268200400) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 13:49:27.292195) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 13:49:27.297195400) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 13:49:27.298195600) INFO - REGISTRATION conditions not met for user 'max.max'
+(2022-03-16 13:49:27.305195800) INFO - SEND_USER_DATA for login kolia.k' successful
+(2022-03-16 13:49:27.310196200) INFO - CHANGE_SECRET_DATA for login kolia.k' unsuccessful: login or password is incorrect
+(2022-03-16 13:49:27.315195300) INFO - SEND_SECRET_DATA for login ivanov.i' successful
+(2022-03-16 13:49:27.316196) INFO -  ================== Application is stopped ==================
+(2022-03-16 13:52:27.987617) INFO - ================== Application is started ==================
+(2022-03-16 13:52:27.994623300) INFO - Config is initialized
+(2022-03-16 13:52:27.995617900) INFO - Start to process user forms
+(2022-03-16 13:52:28.120617100) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 13:52:28.127617800) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 13:52:28.155617500) INFO - CHANGE_PASSWORD for login ivanov.i' successful
+(2022-03-16 13:52:28.160617100) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 13:52:28.161617200) INFO - REGISTRATION conditions not met for user 'max.max'
+(2022-03-16 13:52:28.177616100) INFO - SEND_USER_DATA for login kolia.k' successful
+(2022-03-16 13:52:28.182616600) INFO - CHANGE_SECRET_DATA for login 'kolia.k' unsuccessful: login or password is incorrect
+(2022-03-16 13:52:28.188616600) INFO - SEND_SECRET_DATA for login ivanov.i' successful
+(2022-03-16 13:52:28.189617700) INFO -  ================== Application is stopped ==================
+(2022-03-16 13:53:42.109561400) INFO - ================== Application is started ==================
+(2022-03-16 13:53:42.116561900) INFO - Config is initialized
+(2022-03-16 13:53:42.117562100) INFO - Start to process user forms
+(2022-03-16 13:53:42.234561) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 13:53:42.240561400) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 13:53:42.263567200) INFO - CHANGE_PASSWORD for login 'ivanov.i' successful
+(2022-03-16 13:53:42.268561200) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 13:53:42.269561800) INFO - REGISTRATION conditions not met for user 'max.max'
+(2022-03-16 13:53:42.283560500) INFO - SEND_USER_DATA for login 'kolia.k' successful
+(2022-03-16 13:53:42.288561400) INFO - CHANGE_SECRET_DATA for login 'kolia.k' unsuccessful: login or password is incorrect
+(2022-03-16 13:53:42.294561600) INFO - SEND_SECRET_DATA for login 'ivanov.i' successful
+(2022-03-16 13:53:42.294561600) INFO -  ================== Application is stopped ==================
+(2022-03-16 14:21:51.091463100) INFO - ================== Application is started ==================
+(2022-03-16 14:21:51.098462800) INFO - Config is initialized
+(2022-03-16 14:21:51.099463500) INFO - Start to process user forms
+(2022-03-16 14:21:51.221463200) ERROR - REGISTRATION. User with login 'ivanov.i' already exists
+(2022-03-16 14:21:51.227462400) ERROR - REGISTRATION. User with login 'sidorov.v' already exists
+(2022-03-16 14:21:51.252463100) INFO - CHANGE_PASSWORD for login 'ivanov.i' successful
+(2022-03-16 14:21:51.257462600) ERROR - REGISTRATION. User with login 'kolia.k' already exists
+(2022-03-16 14:21:51.258464200) INFO - REGISTRATION conditions not met for user 'max.max'
+(2022-03-16 14:21:51.273462100) INFO - SEND_USER_DATA for login 'kolia.k' successful
+(2022-03-16 14:21:51.279463100) INFO - CHANGE_SECRET_DATA for login 'kolia.k' unsuccessful: login or password is incorrect
+(2022-03-16 14:21:51.285463100) INFO - SEND_SECRET_DATA for login 'ivanov.i' unsuccessful: login or password is incorrect
+(2022-03-16 14:21:51.286463800) INFO -  ================== Application is stopped ==================

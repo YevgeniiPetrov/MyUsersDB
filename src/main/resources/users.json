@@ -1,0 +1,50 @@
+{
+  "ivanov.i" : {
+    "userData" : {
+      "firstName" : "ivan",
+      "lastName" : "ivanov",
+      "birthday" : "23.09.1990",
+      "email" : "ivan.ivanov@gmail.com"
+    },
+    "authentication" : {
+      "login" : "ivanov.i",
+      "password" : "oqtyQCHIgXV53rvYfox/cNZ5ghMFtw3jLL7MNYnDFsQ="
+    },
+    "secret" : {
+      "question" : "favorite sport",
+      "answer" : "soccer"
+    }
+  },
+  "sidorov.v" : {
+    "userData" : {
+      "firstName" : "vasia",
+      "lastName" : "sidorov",
+      "birthday" : "03.12.1995",
+      "email" : "vasia.sidorov@gmail.com"
+    },
+    "authentication" : {
+      "login" : "sidorov.v",
+      "password" : "ZvL14ZgvF7Fs8esSy5wHZo5JMJiG5ogEE9VssGPKuVw="
+    },
+    "secret" : {
+      "question" : "favorite drink",
+      "answer" : "beer"
+    }
+  },
+  "kolia.k" : {
+    "userData" : {
+      "firstName" : "kolia",
+      "lastName" : "kolia",
+      "birthday" : "03.12.1995",
+      "email" : "kolia.kolia@gmail.com"
+    },
+    "authentication" : {
+      "login" : "kolia.k",
+      "password" : "eADtMWxqoFk/GcRFSs9qUdPreKRdrcpmVVN5jmhT1Uo="
+    },
+    "secret" : {
+      "question" : "test",
+      "answer" : "done"
+    }
+  }
+}
